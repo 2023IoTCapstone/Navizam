@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.fragment_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="286dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:text="일어날 시간 00:00:00"
+                android:layout_weight="2"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_waketime"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:backgroundTint="#111111"
+                android:text="일어날 시간 설정"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_above="@+id/btn_1"
+                android:text="잠드는 시간  00:00:00"
+                android:layout_weight="2"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_sleeptime"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:backgroundTint="#111111"
+                android:text="잠드는 시간 설정"
+                android:layout_weight="1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/btn_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="수면 중 수유시간 알림 (3h)"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
